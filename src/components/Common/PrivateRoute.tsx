@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate, Outlet, Route, RouteProps } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 export function PrivateRoute({ children }: { children: JSX.Element }) {
   //Check if user isLogged in

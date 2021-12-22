@@ -18,3 +18,29 @@ auth/ authentication:
 - login
 - sing up/ regisrer
 - forget password
+
+Click login
+
+- Call api to login
+- Success --> redirect Admin page
+- Failed --> show Error
+
+authSaga
+2 action not exitst together
+LOOP
+
+- if login watch logout
+- else watch login
+  handle
+  LOGIN LOGOUT
+
+Login
+
+- call login API to get token + userinfo
+- set Token to localstorage
+- redirect to admin page
+
+Logout
+
+- Clear token from localstorage
+- redirect to login page
